@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>play_button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="01_Гл_персональный-тренер_1280" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-268.000000, -429.000000)">
+        <g id="play_button" transform="translate(111.000000, 429.000000)">
+            <g transform="translate(157.000000, 0.000000)">
+                <circle id="Oval-2" fill="#FFFFFF" cx="17.5" cy="17.5" r="17.5"></circle>
+                <polygon id="Path-2" fill="#CB6F98" points="15 22 22 17.3719165 15 13"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

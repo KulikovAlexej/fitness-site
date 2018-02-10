@@ -1,0 +1,132 @@
+$darkGrey: #2A303E
+$lightGrey: #D7D3D7
+$pink: #CB6F98
+@import 'modules/media-queries.scss'
+@font-face
+	font-family: "OpenSansBold"
+	src : url("../fonts/OpenSans-Bold.ttf")
+.clearfix:after
+  content: ""
+  display: block
+  height: 0
+  clear: both
+  visibility: hidden
+body
+	// background-color: $darkGrey
+	margin: 0
+	padding: 0
+h1,h2,h3,p
+	margin: 0
+	padding: 0
+.screen_container
+	display: grid
+	grid-template-columns: repeat(12, 1fr)
+	grid-template-rows: 100vh
+	grid-column-gap: 20px
+	@import 'modules/aside.sass'
+	.title_wrap
+		background: orange
+		grid-column: 2/4
+		.screen_title
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			z-index: 10000
+			h1
+				font-size: 55px
+				&:nth-child(1)
+					color: $pink
+	.content_wrap
+		background-image: url(../img/main_photo.jpg)
+		background-repeat: no-repeat
+		background-size: cover
+		grid-column: 4/10
+		position: relative
+		.photo_wrap
+			position: absolute
+			height: 90vh
+			z-index: 100
+			right: -23%
+			top: 50%
+			transform: translateY(-50%)
+			img
+				height: 100%
+				width: auto
+	.burger_sect
+		background: $lightGrey
+		grid-column: 10/13
+		.burger_wrap
+			width: 50px
+			height: 50px
+			background: green
+			position: fixed
+			right: 0
+			transform: translateX(-50%)
+			top: 40px
+			#hamburger
+				div
+					width: 15px
+					height: 3px
+					margin-top: 5px
+					background: red
+					margin-left: auto
+					margin-right: auto
+					&:nth-child(1)
+						margin-top: 0
+			// #hamburger
+			// 	margin-top: 30px
+			// 	position: relative
+			// 	display: block
+			// 	height: 3rem
+			// 	width: 3rem
+			// 	background: #1f2229
+			// 	transition: 0.3s
+			// 	span
+			// 		position: absolute
+			// 		top: 50%
+			// 		left: 50%
+			// 		height: 0
+			// 		width: 3rem
+			// 		border: 0.25rem solid white
+			// 		border-radius: 3rem
+			// 		margin: -0.25rem 0 0 -1.75rem
+			// 		transition: 0.3s
+			// 		&:before,
+			// 		&:after
+			// 			content: ''
+			// 			position: absolute
+			// 			left: 50%
+			// 			width: 3.5rem
+			// 			height: 0.5rem
+			// 			background: white
+			// 			border-radius: 3rem
+			// 			margin: 0 0 0 -1.75rem
+			// 			transition: 0.3s
+			// 		&:before
+			// 			top: -1.125rem
+			// 		&:after
+			// 			top: 0.625rem
+			// #hamburger.open
+			// 	span
+			// 		height: 3rem
+			// 		margin: -1.875rem 0 0 -1.875rem
+			// 		border-width: 0.375rem
+			// 		&:before,
+			// 		&:after
+			// 			top: 1.1875rem
+			// 			width: 2rem
+			// 			margin: 0 0 0 -1rem
+			// 		&:before
+			// 			transform: rotate(-135deg)
+			// 		&:after
+			// 			transform: rotate(135deg)
+.next_screen
+	display: grid
+	grid-template-columns: repeat(12, 1fr)
+	grid-template-rows: 100vh
+	grid-column-gap: 20px
+	h1
+		grid-column: 2/12
+		// @include iphone4(landscape)
+		// 	color: grey			
+	
